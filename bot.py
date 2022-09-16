@@ -71,7 +71,7 @@ It is recommended to use slash commands and therefore not use prefix commands.
 
 If you want to use prefix commands, make sure to also enable the intent below in the Discord developer portal.
 """
-# intents.message_content = True
+intents.message_content = True
 
 bot = Bot(command_prefix=commands.when_mentioned_or(config["prefix"]), intents=intents, help_command=None)
 
@@ -219,7 +219,7 @@ async def load_cogs() -> None:
                 exception = f"{type(e).__name__}: {e}"
                 print(f"Failed to load extension {extension}\n{exception}")
 
-
+#TODO logging when anyone plays a game, start and stop.
 init_db()
 asyncio.run(load_cogs())
 bot.run(config["token"])
