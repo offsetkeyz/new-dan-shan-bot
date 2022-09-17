@@ -199,7 +199,7 @@ class R6Bot(commands.Cog, name="r6 bot"):
         embed=discord.Embed(title="RAINBOWSIXSTATS BOT HELP", description=f"Below is a list of commands and their parameters that this bot can perform. All commands must follow the bots prefix {config['prefix']}, make sure to include a space after the prefix.", color=0x0062ff)
         embed.add_field(name="Commands", value="stats \nkd \nmmr \nrank", inline=True)
         embed.add_field(name="Parmameters", value="platform (uplay, xbl, psn), username \nplatform (uplay, xbl, psn), username \nplatform (uplay, xbl, psn), username \nplatform (uplay, xbl, psn), username", inline=True)
-        await author.send(embed=embed)
+        await ctx.send(embed=embed)
     
 
 
