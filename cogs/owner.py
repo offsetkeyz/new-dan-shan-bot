@@ -42,7 +42,6 @@ class Owner(commands.Cog, name="owner"):
         name="say",
         description="The bot will say anything you want.",
     )
-    @checks.is_owner()
     async def say(self, context: Context, message: str) -> None:
         """
         The bot will say anything you want.
@@ -56,7 +55,6 @@ class Owner(commands.Cog, name="owner"):
         name="embed",
         description="The bot will say anything you want, but within embeds.",
     )
-    @checks.is_owner()
     async def embed(self, context: Context, message: str) -> None:
         """
         The bot will say anything you want, but using embeds.
