@@ -6,6 +6,8 @@ This is a template to create your own discord bot in python.
 Version: 5.1
 """
 
+import os
+import sys
 from discord.ext.commands import Context
 from helpers import checks
 import requests
@@ -15,6 +17,12 @@ import discord
 from discord.ext import commands
 from discord.ext.commands import Context
 from helpers import checks
+
+if not os.path.isfile("config.json"):
+    sys.exit("'config.json' not found! Please add it and try again.")
+else:
+    with open("config.json") as file:
+        config = json.load(file)
 
 #START OF R6TAB API HANDLING
 class Player:
@@ -188,7 +196,7 @@ class R6Bot(commands.Cog, name="r6 bot"):
         
         author = self.bot.get_user(ctx.author.id)
 
-        embed=discord.Embed(title="RAINBOWSIXSTATS BOT HELP", description=f"Below is a list of commands and their parameters that this bot can perform. All commands must follow the bots prefix {prefix}, make sure to include a space after the prefix.", color=0x0062ff)
+        embed=discord.Embed(title="RAINBOWSIXSTATS BOT HELP", description=f"Below is a list of commands and their parameters that this bot can perform. All commands must follow the bots prefix {config['prefix']}, make sure to include a space after the prefix.", color=0x0062ff)
         embed.add_field(name="Commands", value="stats \nkd \nmmr \nrank", inline=True)
         embed.add_field(name="Parmameters", value="platform (uplay, xbl, psn), username \nplatform (uplay, xbl, psn), username \nplatform (uplay, xbl, psn), username \nplatform (uplay, xbl, psn), username", inline=True)
         await author.send(embed=embed)
