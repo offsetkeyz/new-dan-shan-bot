@@ -186,7 +186,7 @@ class R6Bot(commands.Cog, name="r6 bot"):
         now = timenow.strftime("%m/%d/%Y, %H:%M:%S")
         print(f"User: {ctx.author} ID: {ctx.author.id} called the help command at {now}")
         
-        author = bot.get_user(ctx.author.id)
+        author = self.bot.get_user(ctx.author.id)
 
         embed=discord.Embed(title="RAINBOWSIXSTATS BOT HELP", description=f"Below is a list of commands and their parameters that this bot can perform. All commands must follow the bots prefix {prefix}, make sure to include a space after the prefix.", color=0x0062ff)
         embed.add_field(name="Commands", value="stats \nkd \nmmr \nrank", inline=True)
