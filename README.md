@@ -1,13 +1,13 @@
 # Python Discord Bot Template
 
 <p align="center">
-  <a href="//discord.gg/ucX86j7jt6"><img src="https://img.shields.io/discord/739934735387721768?logo=discord"></a>
-  <a href="//github.com/offsetkeyz/new-dan-shan-bot/releases"><img src="https://img.shields.io/github/v/release/kkrypt0nn/Python-Discord-Bot-Template"></a>
-  <a href="//github.com/offsetkeyz/new-dan-shan-bot/commits/master"><img src="https://img.shields.io/github/last-commit/kkrypt0nn/Python-Discord-Bot-Template"></a>
-  <a href="//github.com/offsetkeyz/new-dan-shan-bot/releases"><img src="https://img.shields.io/github/downloads/kkrypt0nn/Python-Discord-Bot-Template/total"></a>
-  <a href="//github.com/kkrypt0nn/Python-Discord-Bot-Template/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/kkrypt0nn/Python-Discord-Bot-Template"></a>
-  <a href="//github.com/offsetkeyz/new-dan-shan-bot"><img src="https://img.shields.io/github/languages/code-size/kkrypt0nn/Python-Discord-Bot-Template"></a>
-  <a href="//github.com/offsetkeyz/new-dan-shan-bot/issues"><img src="https://img.shields.io/github/issues-raw/kkrypt0nn/Python-Discord-Bot-Template"></a>
+  <a href="//discord.gg/ucX86j7jt6"><img src="https://img.shields.io/discord/759077526168535123?logo=discord"></a>
+  <a href="//github.com/offsetkeyz/new-dan-shan-bot/releases"><img src="https://img.shields.io/github/v/release/offsetkeyz/new-dan-shan-bot?include_prereleases"></a>
+  <a href="//github.com/offsetkeyz/new-dan-shan-bot/commits/master"><img src="https://img.shields.io/github/last-commit/offsetkeyz/new-dan-shan-bot"></a>
+  <a href="//github.com/offsetkeyz/new-dan-shan-bot/releases"><img src="https://img.shields.io/github/downloads/offsetkeyz/new-dan-shan-bot/total"></a>
+  <a href="//github.com/kkrypt0nn/Python-Discord-Bot-Template/blob/main/LICENSE.md"><img src="https://img.shields.io/github/license/offsetkeyz/new-dan-shan-bot"></a>
+  <a href="//github.com/offsetkeyz/new-dan-shan-bot"><img src="https://img.shields.io/github/languages/code-size/offsetkeyz/new-dan-shan-bot"></a>
+  <a href="//github.com/offsetkeyz/new-dan-shan-bot/issues"><img src="https://img.shields.io/github/issues-raw/offsetkeyz/new-dan-shan-bot"></a>
 </p>
 
 
