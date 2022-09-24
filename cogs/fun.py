@@ -14,6 +14,7 @@ from discord import app_commands
 from discord.ext import commands
 from discord.ext.commands import Context
 from helpers import checks
+import bot
 
 
 class Choice(discord.ui.View):
@@ -94,7 +95,6 @@ class RockPaperScissorsView(discord.ui.View):
 class Fun(commands.Cog, name="fun"):
     def __init__(self, bot):
         self.bot = bot
-    @app_commands.guilds(704494754129510431)
     @commands.hybrid_command(
         name="randomfact",
         description="Get a random fact."
