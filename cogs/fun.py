@@ -94,7 +94,7 @@ class RockPaperScissorsView(discord.ui.View):
 class Fun(commands.Cog, name="fun"):
     def __init__(self, bot):
         self.bot = bot
-
+    @app_commands.guilds(704494754129510431)
     @commands.hybrid_command(
         name="randomfact",
         description="Get a random fact."

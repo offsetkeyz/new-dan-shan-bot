@@ -8,6 +8,7 @@ Version: 5.1
 
 from discord.ext import commands
 from discord.ext.commands import Context
+from discord import app_commands
 
 from helpers import checks
 
@@ -17,7 +18,7 @@ class Template(commands.Cog, name="template"):
     def __init__(self, bot):
         self.bot = bot
 
-
+    @app_commands.guilds(704494754129510431)
     # Here you can just add your own commands, you'll always need to provide "self" as first parameter.
     @commands.hybrid_command(
         name="testcommand",
