@@ -17,6 +17,7 @@ import sys
 from contextlib import closing
 
 import discord
+from discord import app_commands
 from discord import Interaction
 from discord.ext import tasks, commands
 from discord.ext.commands import Bot
@@ -35,7 +36,6 @@ Setup bot intents (events restrictions)
 For more information about intents, please go to the following websites:
 https://discordpy.readthedocs.io/en/latest/intents.html
 https://discordpy.readthedocs.io/en/latest/intents.html#privileged-intents
-
 
 Default Intents:
 intents.bans = True
@@ -62,7 +62,7 @@ intents.members = True
 intents.message_content = True
 intents.presences = True
 """
-
+guild_id = 704494754129510431
 intents = discord.Intents.default()
 
 """
@@ -75,6 +75,7 @@ If you want to use prefix commands, make sure to also enable the intent below in
 
 bot = Bot(command_prefix=commands.when_mentioned_or(config["prefix"]), intents=intents, help_command=None)
 
+@app_commands.guilds(guild_id)
 
 def init_db():
     with closing(connect_db()) as db:
