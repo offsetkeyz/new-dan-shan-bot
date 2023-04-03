@@ -5,6 +5,7 @@ This is a template to create your own discord bot in python.
 
 Version: 5.1
 """
+import datetime
 from flask import Flask, request
 import asyncio
 import json
@@ -117,8 +118,8 @@ async def status_task() -> None:
     """
     Setup the game status task of the bot
     """
-    statuses = ["the skin flute", "with himself", 'pornhub.com', 'with rogaine', 'who can I demote next', 'with mister Avant']
-    # statuses = ["test cron job"]
+    # statuses = ["the skin flute", "with himself", 'pornhub.com', 'with rogaine', 'who can I demote next', 'with mister Avant']
+    statuses = [f"Updated {datetime.datetime.now()}"]
     await bot.change_presence(activity=discord.Game(random.choice(statuses)))
 
 
