@@ -117,8 +117,8 @@ async def status_task() -> None:
     """
     Setup the game status task of the bot
     """
-    # statuses = ["the skin flute", "with himself", 'pornhub.com', 'with rogaine', 'who can I demote next', 'with mister Avant']
-    statuses = ["test cron job"]
+    statuses = ["the skin flute", "with himself", 'pornhub.com', 'with rogaine', 'who can I demote next', 'with mister Avant']
+    # statuses = ["test cron job"]
     await bot.change_presence(activity=discord.Game(random.choice(statuses)))
 
 
