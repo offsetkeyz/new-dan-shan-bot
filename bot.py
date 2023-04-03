@@ -5,7 +5,7 @@ This is a template to create your own discord bot in python.
 
 Version: 5.1
 """
-
+from flask import Flask, request
 import asyncio
 import json
 import os
